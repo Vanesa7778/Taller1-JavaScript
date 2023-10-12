@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/index.css">
+    <title> Actvidad 3</title>
+</head>
+<body>
+    
+    <h1 style="text-align: center;"> Trabajo con Javascript </h1>
+    <div class="caja">
+        <input type="number" id="n1" class="form-control" placeholder="numero 1"> 
+        <br>
+        <input type="number" id="n2" class="form-control" placeholder="numero 2"> 
+        <br>
+        <select class="form-control" aria-label="default select example" id="opc"> 
+        <option value="1">Sumar</option>
+        <option value="2">Resta</option>
+        <option value="3">Multilplicar</option>
+        <option value="4">Dividir</option>
+        <option value="5">Potencia del primer numero</option>
+    </select>
+    <br>
+    <button onclick="mostrar()" class="btn-outside-dark">calculadora</button> <br>
+    <!-- Mostrar el resultado-->
+        <div class="alert alert-warning alert-dismissible fade show" role="alert" id="respuesta">
+            <strong id="resultado"></strong>
+        <button type="button" class="btn-outside-close" data-bs-dismiss="alert" aria-label="close"></button>
+        </div>
+    </div>
+    <script src="js/calculadoraMejorada.js"></script>
+</body>
+</html>
