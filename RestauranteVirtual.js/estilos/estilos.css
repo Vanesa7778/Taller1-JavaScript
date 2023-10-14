@@ -1,0 +1,31 @@
+body
+div#respuesta{
+    display: none;
+}
+.caja{
+    width: 500px;
+    height: 80px;
+    position: sticky;
+    top: 30px; left: 400px;
+}
+
+h1{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+body {
+    background-color: hotpink;
+    text-align: center;
+}
+
+button{
+    background-color: mediumorchid;
+    margin-top: 5px;
+}
+
+input{
+    margin: 5px;
+}

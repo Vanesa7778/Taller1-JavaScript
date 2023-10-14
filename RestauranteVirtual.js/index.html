@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js/restaurante.js">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Restaurante Virtual</title>
+</head>
+<body>
+    <h1 class="titulo">Restaurante Comidas Rapidas Virtual</h1>
+    <label for="tipoPlato">Tipo de Plato:</label>
+    <select id="tipoPlato">
+        <option value="Plato1">Hamburguesa</option>
+        <option value="Plato2">Salchipapa</option>
+        <option value="Plato3">Perro caliente</option>
+    </select>
+    <br>
+    <label for="cantidadPlatos">Cantidad de Platos:</label>
+    <input type="number" id="cantidadPlatos"> </br>
+    <br>
+    <label for "bebida">Bebida:</label>
+    <select id="bebida">
+        <option value="Bebida1">Coca Cola</option>
+        <option value="Bebida2">Jugos Hit</option>
+        <option value="Bebida3"><Label>Limonada</Label></option>
+    </select>
+    <br>
+    <label for="cantidadBebidas">Cantidad de Bebidas:</label>
+    <input type="number" id="cantidadBebidas">
+    <br>
+    <button onclick="calcularTotal()">Calcular Total</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularTotal() {
+            var tipoPlato = document.getElementById("tipoPlato").value;
+            var cantidadPlatos = parseInt(document.getElementById("cantidadPlatos").value);
+            var bebida = document.getElementById("bebida").value;
+            var cantidadBebidas = parseInt(document.getElementById("cantidadBebidas").value);
+
+            var preciosPlatos = {
+                "Plato1": 20000,
+                "Plato2": 30000,
+                "Plato3": 12000
+            };
+
+            var precioBebida = {
+                "Bebida1": 4500,
+                "Bebida2": 3500,
+                "Bebida3": 2000
+            };
+
+            var totalPlatos = preciosPlatos[tipoPlato] * cantidadPlatos;
+            var totalBebidas = precioBebida[bebida] * cantidadBebidas;
+            var total = totalPlatos + totalBebidas;
+
+            var resultado = document.getElementById("resultado");
+            resultado.textContent = "Total a pagar: $" + total;
+        }
+    </script>
+</body>
+</html>
