@@ -1,4 +1,4 @@
-function pedido() {
+/*function pedido() {
     var tipoPlato = document.getElementById("tipoPlato").value;
     var cantidadPlatos = parseInt(document.getElementById("cantidadPlatos").value);
     var tipoBebida = document.getElementById("bebida").value;
@@ -23,3 +23,4 @@ function pedido() {
     var resultado = document.getElementById("resultado");
     resultado.textContent = "Total a pagar: $" + total;
 }
+*/
