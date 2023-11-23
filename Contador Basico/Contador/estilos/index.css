@@ -1,0 +1,17 @@
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkcyan;
+}
+
+h2{
+    color:crimson
+}
+
+.container {
+    margin-top: 40px;
+}
+
+button{
+    margin-top: 20px;
+}
+
