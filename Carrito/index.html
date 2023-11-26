@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Libros</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>LIBROS Y CAFE LITERARIO</h1>
+
+    <div class="libro" id="libro1">
+        <img src="img/Los-Juegos-del-Hambre-balada-de-pajaros.jpg" alt="Libro balada de pajaros cantores y serpientes">
+        <h2>Libro balada de pajaros cantores y serpientes</h2>
+        <h2>precio libro:100000</h2>
+        <p>Cantidad: <span id="libro1Cantidad">0</span></p>
+        <button onclick="aumentarCantidad('libro1')">Agregar a carrito</button>
+        <button onclick="disminuirCantidad('libro1')">Quitar de carrito</button>
+    </div>
+
+ 
+    <div class="libro" id="libro2">
+        <img src="img/los-juegos-del-hambre-1-los-juegos-del-hambre.jpg" alt="Libro Los Juegos del Hambre balada de pajaros">
+        <h2>Libro Los Juegos del Hambre</h2>
+        <h2>precio libro:150000</h2>
+        <p>Cantidad: <span id="libro2Cantidad">0</span></p>
+        <button onclick="aumentarCantidad('libro2')">Agregar a carrito</button>
+        <button onclick="disminuirCantidad('libro2')">Quitar de carrito</button>
+    </div>
+
+    <h2>Libros Seleccionados</h2>
+
+    
+    <ul id="listaCompra">
+      
+    </ul>
+
+
+    <div id="valorTotal">
+        <p>Valor Total: $<span id="total">0</span></p>
+    </div>
+
+
+    <button id="botonTotalCompra">Generar Total de Compra</button>
+</div>
+
+
+<script src="js/carrito.js"></script>
+
+</body>
+</html>
+
+

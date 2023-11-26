@@ -1,0 +1,71 @@
+body {
+    background-image: url(/img/imagenFondo1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat ;
+    color: black;
+    margin: 0; 
+    padding: 0; 
+}
+/*estilo para el titulo principal*/
+h1 {
+    color: black; 
+    text-align: center;
+    
+}
+
+/*estilo para el contenedor principal */
+.container {
+    background-color: #fff;
+    padding: 30px; 
+    border-radius: 20px; 
+    margin: 50px auto; 
+    max-width: 600px; 
+    box-shadow: #ddd;
+}
+
+
+/*estilo para clase libro*/
+.libro {
+    background-color: aliceblue;
+    margin-bottom: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    border-radius: 20px; 
+}
+
+/* estilo para las portadas-imagenes que estan en la clase libro */
+.libro img {
+    width: 170px; 
+    margin-bottom: 20px; 
+}
+
+/* estilo para los encabezados h2 en este caso el titulo de los libros en la clase libros */
+.libro h2 {
+    font-size: 1.5em; 
+    margin: 6px 0;
+    color: black;
+}
+
+/* estilo para parrafos que estan dentro del contenedor de libro en este caso 'cantidad'*/
+.libro p {
+    font-size: 1em; 
+    margin: 6px 0; 
+    color: #555;
+}
+
+/* estilo para los botones */
+button {
+    font-size: 1em; 
+    margin: 5px;
+    background-color: sienna;
+    color: #fff; 
+    border-radius: 5px; 
+  
+}
+
+/*estilo para el valor total */
+#valorTotal {
+    color: #fff; 
+}
+
