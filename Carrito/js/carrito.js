@@ -98,14 +98,24 @@ function actualizarValorTotal(valorTotal) {//va a obtener el elemento HTML con e
 
 // funcion para generar el total de la compra y agregarlo debajo del boton
 function generarTotalCompra() {
-    const totalCompra = document.getElementById('total').innerText;//se obtiene el contenido actual del elemento con el id 'total'
-    const totalCompraElement = document.createElement('p');//se crea un nuevo elemento de parrafo de la etiqueta <p> en el documento
-    totalCompraElement.innerText = `Total de la Compra: $${totalCompra}`;//se asigna el texto al elemento creado  de parrafo donde se va a incluir el valor total de la compra
-    
-//busca el contenedor del boton y va a agregar el total de la compra debajo de el
-    const container = document.querySelector('.container');
-    container.appendChild(totalCompraElement);//va a agregar el nuevo elemento de parrafo (que contiene el total de la compra) al contenedor
+    const totalCompra = document.getElementById('total').innerText;
+
+    //se elimina cualquier contenido anterior debajo del boton
+    const botonTotalCompra = document.getElementById('botonTotalCompra');
+    const contenidoAnterior = botonTotalCompra.nextSibling;
+
+    if (contenidoAnterior && contenidoAnterior.nodeName === 'P') {
+        contenidoAnterior.remove();
+    }
+
+    //se crea un nuevo elemento de parrafo con el total de la compra
+    const totalCompraElement = document.createElement('p');
+    totalCompraElement.innerText = `Total de la Compra: $${totalCompra}`;
+
+    // Insertar el nuevo elemento antes del boton
+    botonTotalCompra.parentNode.insertBefore(totalCompraElement, botonTotalCompra.nextSibling);
 }
+
 
 //va a obtiener la referencia del  elemento del boton mediante su id "botonTotalCompra"
 const botonTotalCompra = document.getElementById('botonTotalCompra');
